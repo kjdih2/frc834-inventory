@@ -1,0 +1,66 @@
+.homepage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bg-color-primary);
+    flex-direction: column;
+}
+
+.homepage-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--bg-color-primary);
+}
+
+.homepage-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color-primary);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.homepage-body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bg-color-primary);
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
+.search-inv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4px;
+}
+
+.search-inv-container > input {
+    width: 80%;
+    height: 40px;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    padding-left: 12px;
+    color: var(--text-color-primary);
+    
+    &::placeholder {
+        color: var(--text-color-secondary);
+    }
+}
+
+.searched-parts {
+    
+}

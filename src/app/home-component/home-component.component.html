@@ -1,0 +1,25 @@
+<div class="homepage">
+    <div class="homepage-header">
+        <div class="homepage-header-inner">
+            <div class="font-body-1">FRC 834 Inventory</div>
+            <i class="material-symbols-rounded">settings</i>
+        </div>
+    </div>
+    <div class="homepage-body">
+        <div style="padding-top: 60px"></div>
+        <div class="search-inv-container">
+            <input
+                placeholder="Search Inventory"
+                [(ngModel)]="searchText"
+                (input)="filterItems($event)"
+            />
+        </div>
+		<div style="padding-top: 24px;"></div>
+		<div class="searched-parts">
+			<div style="padding-top: 12px;"></div>
+			<div>
+				Hi
+			</div>
+		</div>
+    </div>
+</div>

@@ -1,1 +1,217 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+	--bg-color-primary: #FFFFFF ;
+	--primary-button-text-color: #FFFFFF ;
+	--bg-color-secondary: #FAFAFA ;
+	--bg-color-hover: #E5E5E5 ;
+	--text-color-primary: #333333 ;
+	--text-color-secondary: #666666 ;
+	--text-color-disabled: #808080 ;
+	--border-primary: #B2B2B2 ;
+	--border-secondary: #E5E5E5 ;
+	--link-interactive: #0562D2 ;
+	--link-interactive-hover: #044EA7 ;
+	--success-strong: #008200 ;
+	--caution-strong: #B16201 ;
+	--danger-strong: #BF152C ;
+	--danger-strong-hover: #AF1328 ;
+	--callout-purple: #8C33FF;
+	--popup-bg: rgba(0, 0, 0, 0.3);
+	
+	--dark-obsidian-bg-color-primary: #00142E;
+	--dark-obsidian-primary-button-text-color: #00142E;
+	--dark-obsidian-bg-color-secondary: #141414;
+	--dark-obsidian-bg-color-hover: #333333;
+	--dark-obsidian-text-color-primary: #FFFFFF;
+	--dark-obsidian-text-color-secondary: #FAFAFA;
+	--dark-obsidian-text-color-disabled: #E5E5E5;
+	--dark-obsidian-border-primary: #808080;
+	--dark-obsidian-border-secondary: #4D4D4D;
+	--dark-obsidian-link-interactive: #388CF2;
+	--dark-obsidian-link-interactive-hover: #2480F1;
+	--dark-obsidian-success-strong: #339B33;
+	--dark-obsidian-caution-strong: #DD7A01;
+	--dark-obsidian-danger-strong: #E84853;
+	--dark-obsidian-danger-strong-hover: #EB5C66;
+	--dark-obsidian-callout-purple: #A966FF;
+	--dark-obsidian-popup-bg: rgba(0, 0, 0, 0.3);
+	--dark-obsidian-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+
+	--font-family-audit: "Lato", sans-serif;
+	--font-size-base: 16px;
+	--font-weight-light: 300;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+	--shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+	--font-size-title: 24px;
+	--line-height-title: 32px;
+	--font-size-subtitle: 20px;
+	--line-height-subtitle: 28px;
+	--font-family-admin: "Lato", sans-serif;
+	--nok-check-width: 40px;
+	--nok-check-height: 36px;
+	--always-black: #000000;
+}
+
+.dark-theme-obsidian {
+	--bg-color-primary: var(--dark-obsidian-bg-color-primary) !important;
+	--primary-button-text-color: var(--dark-obsidian-primary-button-text-color) !important;
+	--bg-color-secondary: var(--dark-obsidian-bg-color-secondary) !important;
+	--bg-color-hover: var(--dark-obsidian-bg-color-hover) !important;
+	--text-color-primary: var(--dark-obsidian-text-color-primary) !important;
+	--text-color-secondary: var(--dark-obsidian-text-color-secondary) !important;
+	--text-color-disabled: var(--dark-obsidian-text-color-disabled) !important;
+	--border-primary: var(--dark-obsidian-border-primary) !important;
+	--border-secondary: var(--dark-obsidian-border-secondary) !important;
+	--link-interactive: var(--dark-obsidian-link-interactive) !important;
+	--link-interactive-hover: var(--dark-obsidian-link-interactive-hover) !important;
+	--success-strong: var(--dark-obsidian-success-strong) !important;
+	--caution-strong: var(--dark-obsidian-caution-strong) !important;
+	--danger-strong: var(--dark-obsidian-danger-strong) !important;
+	--danger-strong-hover: var(--dark-obsidian-danger-strong-hover) !important;
+	--callout-purple: var(--dark-obsidian-callout-purple) !important;
+	--popup-bg: var(--dark-obsidian-popup-bg) !important;
+	--shadow: var(--dark-obsidian-shadow) !important;
+}
+
+// Standard classes
+.font-title {
+	font-family: var(--font-family-audit);
+	font-size: var(--font-size-title);
+	line-height: var(--line-height-title);
+	color: var(--text-color-primary);
+}
+
+.font-subtitle {
+	font-family: var(--font-family-audit);
+	font-size: var(--font-size-subtitle);
+	line-height: var(--line-height-subtitle);
+	font-weight: var(--font-weight-bold);
+	color: var(--text-color-primary);
+}
+
+.font-body-1 {
+	font-family: var(--font-family-audit);
+	font-size: var(--font-size-base);
+	line-height: 24px;
+	color: var(--text-color-primary);
+}
+
+.font-body-2 {
+	font-family: var(--font-family-audit);
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--text-color-primary);
+}
+
+.font-caption {
+	font-family: var(--font-family-audit);
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: var(--font-weight-normal);
+	color: var(--text-color-secondary);
+}
+
+.font-caption-no-color {
+	font-family: var(--font-family-audit);
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: var(--font-weight-normal);
+}
+
+.text-color-primary {
+	color: var(--text-color-primary);
+}
+
+.text-color-secondary {
+	color: var(--text-color-secondary);
+}
+
+.text-color-red {
+	color: var(--danger-strong);
+}
+
+.text-color-orange {
+	color: var(--caution-strong);
+}
+
+.text-color-green {
+	color: var(--success-strong);
+}
+
+.text-color-white {
+	color: var(--bg-color-primary);
+}
+
+.text-color-disabled {
+	color: var(--text-color-disabled);
+}
+
+.bg-color-primary {
+	background-color: var(--bg-color-primary);
+}
+
+.bg-color-secondary {
+	background-color: var(--bg-color-secondary);
+}
+
+.bg-color-hover {
+	background-color: var(--bg-color-hover);
+}
+
+.border-primary {
+	border: 1px solid var(--border-primary);
+}
+
+.border-secondary {
+	border: 1px solid var(--border-secondary);
+}
+
+.border-secondary-bottom {
+	border-bottom: 1px solid var(--border-secondary);
+}
+
+.shadow {
+	box-shadow: var(--shadow);
+}
+
+.font-weight-light {
+	font-weight: var(--font-weight-light);
+}
+
+.font-weight-normal {
+	font-weight: var(--font-weight-normal);
+}
+
+.font-weight-medium {
+	font-weight: var(--font-weight-medium);
+}
+
+.font-weight-semibold {
+	font-weight: var(--font-weight-semibold)
+}
+
+.font-weight-bold {
+	font-weight: var(--font-weight-bold);
+}
+
+.font-italics {
+	font-style: italic;
+}
+
+.hidden {
+	display: none !important;
+}
+
+// Utility classes
+.centered-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}

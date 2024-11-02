@@ -14,12 +14,59 @@
                 (input)="filterItems($event)"
             />
         </div>
-		<div style="padding-top: 24px;"></div>
-		<div class="searched-parts">
-			<div style="padding-top: 12px;"></div>
-			<div>
-				Hi
-			</div>
-		</div>
+        <div style="padding-top: 24px"></div>
+        <div class="searched-parts">
+            <div style="padding-top: 12px"></div>
+            <div class="displayed-parts-container">
+                <div class="displayed-part">
+                    <div style="padding-left: 16px;"></div>
+                    <div class="part-info-container font-body-1 text-color-primary font-weight-bold">
+                        Part Name
+                    </div>
+                    <div class="part-info-container font-body-1 text-color-primary font-weight-bold">
+                        Description
+                    </div>
+                    <div class="part-info-container font-body-1 text-color-primary font-weight-bold">
+                        SKU
+                    </div>
+                    <div class="part-info-container font-body-1 text-color-primary font-weight-bold">
+                        Category
+                    </div>
+                    <div class="part-info-container font-body-1 text-color-primary font-weight-bold">
+                        Available Quantity
+                    </div>
+                    <div class="part-info-container font-body-1 text-color-primary font-weight-bold">
+                        Locations Found
+                    </div>
+                </div>
+                <ng-container *ngFor="let part of searchedParts">
+                    <div class="displayed-part">
+                        <div style="padding-left: 16px;"></div>
+                        <div class="part-info-container font-body-1 text-color-primary">
+                            {{ part['partName'] }}
+                        </div>
+                        <div class="part-info-container font-body-1 text-color-primary">
+                            {{ part['description'] }}
+                        </div>
+                        <div class="part-info-container font-body-1 text-color-primary">
+                            {{ part['sku'] }}
+                        </div>
+                        <div class="part-info-container font-body-1 text-color-primary">
+                            {{ part['category'] }}
+                        </div>
+                        <div class="part-info-container font-body-1 text-color-primary">
+                            {{ part['quantity']['availableQuantity'] }}
+                        </div>
+                        <div class="part-info-container-location font-body-1 text-color-primary">
+                            <ng-container *ngFor="let location of part['locations']">
+                                {{ location['binDescription'] }}: {{ location['binQuantity'] }}
+                                <br>
+                            </ng-container>
+                        </div>
+                        <div style="padding-right: 16px;"></div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
     </div>
 </div>

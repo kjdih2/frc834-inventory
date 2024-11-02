@@ -6,6 +6,7 @@
     align-items: center;
     background-color: var(--bg-color-primary);
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .homepage-header {
@@ -15,6 +16,7 @@
     width: 100%;
     height: 60px;
     background-color: var(--bg-color-primary);
+    border-bottom: 1px solid var(--border-secondary);
 }
 
 .homepage-header-inner {
@@ -45,11 +47,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 900px;
 }
 
 .search-inv-container > input {
-    width: 80%;
+    max-width: 900px;
+    width: 100%;
     height: 40px;
     border: 1px solid var(--border-primary);
     border-radius: 8px;
@@ -62,5 +71,57 @@
 }
 
 .searched-parts {
-    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 900px;
+    height: 100%;
+}
+
+.displayed-parts-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    row-gap: 16px;
+}
+
+.displayed-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    column-gap: 8px;   
+    min-height: 50px;
+    border: 1px solid var(--border-secondary);
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.part-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 120px;
+    min-width: 120px;
+    white-space: wrap;
+}
+
+.part-info-container-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: wrap;
+    flex-grow: 1 0 0;
 }
